@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
+import { CONTACT, BUSINESS, ADDRESSES, URLS } from '../../config';
 
 interface LegalNoticeProps {
   isOpen: boolean;
@@ -54,29 +55,29 @@ export function LegalNotice({ isOpen, onClose }: LegalNoticeProps) {
                     1. Informations légales
                   </h3>
                   <p className="mb-2">
-                    <strong className="text-white">Raison sociale :</strong> Studio Renov
+                    <strong className="text-white">Raison sociale :</strong> {BUSINESS.NAME}
                   </p>
                   <p className="mb-2">
-                    <strong className="text-white">Forme juridique :</strong> Entreprise individuelle
+                    <strong className="text-white">Forme juridique :</strong> {BUSINESS.LEGAL_FORM}
                   </p>
                   <p className="mb-2">
-                    <strong className="text-white">SIRET :</strong> 878 831 312
+                    <strong className="text-white">SIRET :</strong> {BUSINESS.SIRET}
                   </p>
                   <p className="mb-2">
-                    <strong className="text-white">Dirigeant :</strong> Éric Beautour
+                    <strong className="text-white">Dirigeant :</strong> {BUSINESS.DIRECTOR}
                   </p>
                   <p className="mb-2">
                     <strong className="text-white">Adresses :</strong>
                   </p>
                   <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>46 rue du Château, 77300 Fontainebleau</li>
-                    <li>9 rue des Colonnes, 75002 Paris</li>
+                    <li>{ADDRESSES.FONTAINEBLEAU.STREET}, {ADDRESSES.FONTAINEBLEAU.CITY}</li>
+                    <li>{ADDRESSES.PARIS.STREET}, {ADDRESSES.PARIS.CITY}</li>
                   </ul>
                   <p className="mt-2">
-                    <strong className="text-white">Téléphone :</strong> 06.27.81.22.28 / 01.85.48.00.82
+                    <strong className="text-white">Téléphone :</strong> {CONTACT.PHONE_MOBILE_DISPLAY} / {CONTACT.PHONE_OFFICE_DISPLAY}
                   </p>
                   <p>
-                    <strong className="text-white">Email :</strong> studiorenovfr@gmail.com
+                    <strong className="text-white">Email :</strong> {CONTACT.EMAIL}
                   </p>
                 </section>
 
@@ -111,7 +112,7 @@ export function LegalNotice({ isOpen, onClose }: LegalNoticeProps) {
                     au traitement de vos données personnelles.
                   </p>
                   <p>
-                    Pour exercer ces droits, contactez-nous à : studiorenovfr@gmail.com
+                    Pour exercer ces droits, contactez-nous à : {CONTACT.EMAIL}
                   </p>
                 </section>
 
@@ -161,7 +162,7 @@ export function LegalNotice({ isOpen, onClose }: LegalNoticeProps) {
                   <p className="text-sm text-white/60">
                     <strong className="text-white">Conception et création du site :</strong>{' '}
                     <a
-                      href="https://www.emy-com.fr"
+                      href={URLS.DESIGNER}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#EFBF04] hover:text-[#EFBF04]/80 transition-colors"

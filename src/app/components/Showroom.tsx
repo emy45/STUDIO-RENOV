@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { MapPin } from 'lucide-react';
 import showroomImage from 'figma:asset/674df72e1dab1bf67878c2dec9a6ceac4d8f13fa.png';
+import { ADDRESSES } from '../../config';
 
 export function Showroom() {
   return (
@@ -45,9 +46,9 @@ export function Showroom() {
                     Showroom Fontainebleau
                   </h3>
                   <p className="text-white/70 text-sm sm:text-base" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                    46 rue du Château
+                    {ADDRESSES.FONTAINEBLEAU.STREET}
                     <br />
-                    77300 Fontainebleau
+                    {ADDRESSES.FONTAINEBLEAU.CITY}
                   </p>
                 </div>
               </div>
@@ -81,9 +82,9 @@ export function Showroom() {
                     Bureau Paris
                   </h3>
                   <p className="text-white/70 text-sm sm:text-base" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                    9 rue des Colonnes
+                    {ADDRESSES.PARIS.STREET}
                     <br />
-                    75002 Paris
+                    {ADDRESSES.PARIS.CITY}
                   </p>
                 </div>
               </div>

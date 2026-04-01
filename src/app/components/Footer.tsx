@@ -2,6 +2,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 import logoImage from 'figma:asset/25ba44032818706ad073e562b071f95f220e1525.png';
 import { useState } from 'react';
 import { LegalNotice } from './LegalNotice';
+import { CONTACT, BUSINESS, ADDRESSES, URLS } from '../../config';
 
 export function Footer() {
   const [isLegalNoticeOpen, setIsLegalNoticeOpen] = useState(false);
@@ -17,7 +18,7 @@ export function Footer() {
                 Rénovation intérieure clé en main. Un seul artisan pour tous vos travaux.
               </p>
               <p className="text-white/60 text-sm" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                SIRET : 878 831 312
+                SIRET : {BUSINESS.SIRET}
               </p>
             </div>
 
@@ -30,28 +31,28 @@ export function Footer() {
               </h3>
               <div className="space-y-3">
                 <a
-                  href="tel:0627812228"
+                  href={`tel:${CONTACT.PHONE_MOBILE}`}
                   className="flex items-center gap-2 text-white/60 hover:text-[#EFBF04] transition-colors"
                   style={{ fontFamily: 'Raleway, sans-serif' }}
                 >
                   <Phone className="w-4 h-4" />
-                  <span>06.27.81.22.28</span>
+                  <span>{CONTACT.PHONE_MOBILE_DISPLAY}</span>
                 </a>
                 <a
-                  href="tel:0185480082"
+                  href={`tel:${CONTACT.PHONE_OFFICE}`}
                   className="flex items-center gap-2 text-white/60 hover:text-[#EFBF04] transition-colors"
                   style={{ fontFamily: 'Raleway, sans-serif' }}
                 >
                   <Phone className="w-4 h-4" />
-                  <span>01.85.48.00.82</span>
+                  <span>{CONTACT.PHONE_OFFICE_DISPLAY}</span>
                 </a>
                 <a
-                  href="mailto:studiorenovfr@gmail.com"
+                  href={`mailto:${CONTACT.EMAIL}`}
                   className="flex items-center gap-2 text-white/60 hover:text-[#EFBF04] transition-colors break-all"
                   style={{ fontFamily: 'Raleway, sans-serif' }}
                 >
                   <Mail className="w-4 h-4 flex-shrink-0" />
-                  <span>studiorenovfr@gmail.com</span>
+                  <span>{CONTACT.EMAIL}</span>
                 </a>
               </div>
             </div>
@@ -67,15 +68,15 @@ export function Footer() {
                 <div className="flex items-start gap-2 text-white/60" style={{ fontFamily: 'Raleway, sans-serif' }}>
                   <MapPin className="w-4 h-4 flex-shrink-0 mt-1" />
                   <div>
-                    <p>46 rue du Château</p>
-                    <p>77300 Fontainebleau</p>
+                    <p>{ADDRESSES.FONTAINEBLEAU.STREET}</p>
+                    <p>{ADDRESSES.FONTAINEBLEAU.CITY}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2 text-white/60" style={{ fontFamily: 'Raleway, sans-serif' }}>
                   <MapPin className="w-4 h-4 flex-shrink-0 mt-1" />
                   <div>
-                    <p>9 rue des Colonnes</p>
-                    <p>75002 Paris</p>
+                    <p>{ADDRESSES.PARIS.STREET}</p>
+                    <p>{ADDRESSES.PARIS.CITY}</p>
                   </div>
                 </div>
               </div>
@@ -93,7 +94,7 @@ export function Footer() {
               </button>
               {' '}|{' '}
               <a
-                href="https://www.emy-com.fr"
+                href={URLS.DESIGNER}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#EFBF04] hover:text-[#EFBF04]/80 transition-colors"

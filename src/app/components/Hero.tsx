@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Phone } from 'lucide-react';
 import heroImage from 'figma:asset/197fbaeb81fa5fdf73c9707f399bb645328aa9b3.png';
+import { CONTACT } from '../../config';
 
 export function Hero() {
   const scrollToContact = () => {
@@ -65,7 +66,7 @@ export function Hero() {
                 Devis Gratuit
               </button>
               <a
-                href="tel:0627812228"
+                href={`tel:${CONTACT.PHONE_MOBILE}`}
                 className="border-2 border-[#EFBF04] text-[#EFBF04] hover:bg-[#EFBF04] hover:text-[#1A1A1A] px-8 py-4 rounded-md transition-all flex items-center justify-center gap-2"
                 style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 600 }}
               >

@@ -1,11 +1,12 @@
 import { motion } from 'motion/react';
 import { Phone } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { CONTACT } from '../../config';
 
 export function FloatingCallButton() {
   return (
     <motion.a
-      href="tel:0627812228"
+      href={`tel:${CONTACT.PHONE_MOBILE}`}
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-[#EFBF04] hover:bg-[#EFBF04]/90 text-[#1A1A1A] p-3 sm:p-4 rounded-full shadow-2xl z-50"
       aria-label="Appeler Studio Renov"
       animate={{

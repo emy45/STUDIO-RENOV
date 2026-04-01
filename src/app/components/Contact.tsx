@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 import { useState, FormEvent } from 'react';
 import contactBg from 'figma:asset/4494841491e25a571ee480bb4e97a284352296f8.png';
+import { CONTACT } from '../../config';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -184,11 +185,11 @@ export function Contact() {
                   Téléphone
                 </p>
                 <a
-                  href="tel:0627812228"
+                  href={`tel:${CONTACT.PHONE_MOBILE}`}
                   className="block text-white hover:text-[#EFBF04] transition-colors text-sm"
                   style={{ fontFamily: 'Raleway, sans-serif' }}
                 >
-                  06.27.81.22.28
+                  {CONTACT.PHONE_MOBILE_DISPLAY}
                 </a>
               </div>
 
@@ -198,11 +199,11 @@ export function Contact() {
                   Email
                 </p>
                 <a
-                  href="mailto:studiorenovfr@gmail.com"
+                  href={`mailto:${CONTACT.EMAIL}`}
                   className="text-white hover:text-[#EFBF04] transition-colors text-sm"
                   style={{ fontFamily: 'Raleway, sans-serif' }}
                 >
-                  studiorenovfr@gmail.com
+                  {CONTACT.EMAIL}
                 </a>
               </div>
 

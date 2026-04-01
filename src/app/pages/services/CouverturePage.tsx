@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
+import { CONTACT } from '../../../config';
 import couvertureImage1 from '../../../imports/AdobeStock_356531689-2.jpeg';
 import couvertureImage2 from '../../../imports/couverture_2-2.jpeg';
 import couvertureImage3 from '../../../imports/couverture_3-2.jpeg';
@@ -205,12 +206,12 @@ export function CouverturePage() {
                 Demander un devis
               </button>
               <a
-                href="tel:0185480082"
+                href={`tel:${CONTACT.PHONE_OFFICE}`}
                 className="border-2 border-[#EFBF04] text-[#EFBF04] hover:bg-[#EFBF04] hover:text-[#1A1A1A] px-8 py-4 rounded-md transition-all inline-flex items-center justify-center gap-2"
                 style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 600 }}
               >
                 <Phone className="w-5 h-5" />
-                01.85.48.00.82
+                {CONTACT.PHONE_OFFICE_DISPLAY}
               </a>
             </div>
           </motion.div>

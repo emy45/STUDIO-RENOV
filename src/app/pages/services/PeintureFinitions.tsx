@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
+import { CONTACT } from '../../../config';
 import paintingImage from 'figma:asset/d155547bde133cba2b918d07d5cc80ce0818ed10.png';
 import paintingRollerImage from 'figma:asset/466f31b8d8e31505f36ff84bf4c09f16b0f95b40.png';
 
@@ -203,12 +204,12 @@ export function PeintureFinitions() {
                 Demander un devis
               </button>
               <a
-                href="tel:0185480082"
+                href={`tel:${CONTACT.PHONE_OFFICE}`}
                 className="border-2 border-[#EFBF04] text-[#EFBF04] hover:bg-[#EFBF04] hover:text-[#1A1A1A] px-8 py-4 rounded-md transition-all inline-flex items-center justify-center gap-2"
                 style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 600 }}
               >
                 <Phone className="w-5 h-5" />
-                01.85.48.00.82
+                {CONTACT.PHONE_OFFICE_DISPLAY}
               </a>
             </div>
           </motion.div>

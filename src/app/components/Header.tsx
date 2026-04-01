@@ -4,6 +4,7 @@ import logoImage from 'figma:asset/4849376c5f907d3afbc682ca9b7821e026fcd7e1.png'
 import { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
+import { CONTACT } from '../../config';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -128,7 +129,7 @@ export function Header() {
           {/* Boutons d'action à droite */}
           <div className="flex items-center gap-2 md:gap-4">
             <motion.a
-              href="tel:0185480082"
+              href={`tel:${CONTACT.PHONE_OFFICE}`}
               className="bg-[#EFBF04] hover:bg-[#EFBF04]/90 text-[#1A1A1A] px-3 py-2 md:px-6 md:py-2 rounded-md transition-colors flex items-center gap-2 font-semibold shadow-lg shadow-[#EFBF04]/50 text-sm md:text-base"
               style={{ fontFamily: 'Raleway, sans-serif' }}
               initial={{ opacity: 0, y: -10 }}
@@ -137,7 +138,7 @@ export function Header() {
               whileHover={{ scale: 1.05 }}
             >
               <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">01.85.48.00.82</span>
+              <span className="hidden sm:inline">{CONTACT.PHONE_OFFICE_DISPLAY}</span>
             </motion.a>
             <button
               onClick={() => scrollToSection('contact')}
