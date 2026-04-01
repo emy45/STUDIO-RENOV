@@ -12,12 +12,23 @@ export function Contact() {
     address: '',
     message: '',
   });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send the form data to a backend
-    alert('Merci pour votre demande ! Nous vous contacterons rapidement.');
-    setFormData({ name: '', email: '', phone: '', address: '', message: '' });
+    setStatus('loading');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error();
+      setStatus('success');
+      setFormData({ name: '', email: '', phone: '', address: '', message: '' });
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -162,13 +173,24 @@ export function Contact() {
                 />
               </div>
 
+              {status === 'success' && (
+                <p className="text-green-400 text-center font-semibold" style={{ fontFamily: 'Raleway, sans-serif' }}>
+                  ✓ Demande envoyée ! Nous vous contacterons rapidement.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="text-red-400 text-center font-semibold" style={{ fontFamily: 'Raleway, sans-serif' }}>
+                  Une erreur est survenue. Veuillez réessayer ou nous appeler directement.
+                </p>
+              )}
               <button
                 type="submit"
-                className="w-full bg-[#EFBF04] hover:bg-[#EFBF04]/90 text-[#1A1A1A] px-8 py-4 rounded-md transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#EFBF04]/30"
+                disabled={status === 'loading'}
+                className="w-full bg-[#EFBF04] hover:bg-[#EFBF04]/90 disabled:opacity-60 text-[#1A1A1A] px-8 py-4 rounded-md transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#EFBF04]/30"
                 style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 600 }}
               >
                 <Send className="w-5 h-5" />
-                Envoyer ma demande
+                {status === 'loading' ? 'Envoi en cours...' : 'Envoyer ma demande'}
               </button>
             </motion.div>
 
