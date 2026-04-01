@@ -41,7 +41,7 @@ export function Hero() {
             <h1
               className="text-4xl sm:text-5xl md:text-7xl mb-6 text-white"
               style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, lineHeight: 1.2 }}
-            >Rénovation Intérieure<br /><span className="text-[#EFBF04]">Clés en Main</span></h1>
+            >Rénovation Intérieure<br /><span className="text-[#EFBF04]">& Couverture</span></h1>
 
             <p
               className="text-lg sm:text-xl md:text-2xl text-white/90 mb-4"
