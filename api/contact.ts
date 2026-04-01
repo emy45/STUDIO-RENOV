@@ -20,7 +20,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       },
       body: JSON.stringify({
         sender: { name: 'Studio Renov', email: 'studiorenovfr@gmail.com' },
-        to: [{ email: 'emy@emy-com.fr' }],
+        to: [{ email: 'emy@emy-com.fr' }, { email: 'studiorenovfr@gmail.com' }],
         replyTo: { email, name },
         subject: `Nouvelle demande de devis — ${name}`,
         htmlContent: `
