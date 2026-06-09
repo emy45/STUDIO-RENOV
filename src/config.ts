@@ -3,7 +3,7 @@ export const CONTACT = {
   PHONE_MOBILE_DISPLAY: '06.27.81.22.28',
   PHONE_OFFICE: '0185480082',
   PHONE_OFFICE_DISPLAY: '01.85.48.00.82',
-  EMAIL: 'studiorenovfr@gmail.com',
+  EMAIL: 'studiorenov.fr@gmail.com',
 };
 
 export const BUSINESS = {
