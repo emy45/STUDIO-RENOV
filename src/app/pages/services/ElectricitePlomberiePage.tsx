@@ -47,8 +47,8 @@ export function ElectricitePlomberiePage() {
       <Helmet>
         <title>Électricité &amp; Plomberie à Fontainebleau et Paris | Studio Renov</title>
         <meta name="description" content="Installation électrique aux normes, plomberie et sanitaire à Fontainebleau et Paris. Mise aux normes, tableau électrique, salle de bain. Devis gratuit." />
-        <link rel="canonical" href="https://studio-renov.fr/services/electricite-plomberie" />
-        <meta property="og:url" content="https://studio-renov.fr/services/electricite-plomberie" />
+        <link rel="canonical" href="https://www.studio-renov.fr/services/electricite-plomberie" />
+        <meta property="og:url" content="https://www.studio-renov.fr/services/electricite-plomberie" />
         <meta property="og:title" content="Électricité &amp; Plomberie à Fontainebleau et Paris | Studio Renov" />
         <meta property="og:description" content="Installation électrique aux normes, plomberie et sanitaire à Fontainebleau et Paris. Mise aux normes, tableau électrique, salle de bain. Devis gratuit." />
       </Helmet>

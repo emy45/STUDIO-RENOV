@@ -46,8 +46,8 @@ export function SolsPlatrerieCloisonsPage() {
       <Helmet>
         <title>Sols, Plâtrerie &amp; Cloisons à Fontainebleau et Paris | Studio Renov</title>
         <meta name="description" content="Parquet, carrelage, faïence, cloisons BA13 et plâtrerie à Fontainebleau et Paris. Artisan qualifié, finitions soignées. Devis gratuit." />
-        <link rel="canonical" href="https://studio-renov.fr/services/sols-platrerie-cloisons" />
-        <meta property="og:url" content="https://studio-renov.fr/services/sols-platrerie-cloisons" />
+        <link rel="canonical" href="https://www.studio-renov.fr/services/sols-platrerie-cloisons" />
+        <meta property="og:url" content="https://www.studio-renov.fr/services/sols-platrerie-cloisons" />
         <meta property="og:title" content="Sols, Plâtrerie &amp; Cloisons à Fontainebleau et Paris | Studio Renov" />
         <meta property="og:description" content="Parquet, carrelage, faïence, cloisons BA13 et plâtrerie à Fontainebleau et Paris. Artisan qualifié, finitions soignées. Devis gratuit." />
       </Helmet>

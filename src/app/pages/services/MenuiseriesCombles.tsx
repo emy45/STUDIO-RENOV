@@ -47,8 +47,8 @@ export function MenuiseriesCombles() {
       <Helmet>
         <title>Menuiseries &amp; Combles à Fontainebleau et Paris | Studio Renov</title>
         <meta name="description" content="Portes, fenêtres, placards et aménagement de combles à Fontainebleau et Paris. Isolation, menuiseries sur mesure. Artisan qualifié. Devis gratuit." />
-        <link rel="canonical" href="https://studio-renov.fr/services/menuiseries-combles" />
-        <meta property="og:url" content="https://studio-renov.fr/services/menuiseries-combles" />
+        <link rel="canonical" href="https://www.studio-renov.fr/services/menuiseries-combles" />
+        <meta property="og:url" content="https://www.studio-renov.fr/services/menuiseries-combles" />
         <meta property="og:title" content="Menuiseries &amp; Combles à Fontainebleau et Paris | Studio Renov" />
         <meta property="og:description" content="Portes, fenêtres, placards et aménagement de combles à Fontainebleau et Paris. Isolation, menuiseries sur mesure. Artisan qualifié. Devis gratuit." />
       </Helmet>

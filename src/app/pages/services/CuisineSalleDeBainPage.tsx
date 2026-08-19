@@ -61,8 +61,8 @@ export function CuisineSalleDeBainPage() {
       <Helmet>
         <title>Cuisine &amp; Salle de Bain sur mesure — Fontainebleau &amp; Paris | Studio Renov</title>
         <meta name="description" content="Conception et aménagement de cuisines et salles de bain sur mesure à Fontainebleau et Paris. Artisan qualifié, suivi personnalisé. Devis gratuit." />
-        <link rel="canonical" href="https://studio-renov.fr/services/cuisine-salle-de-bain" />
-        <meta property="og:url" content="https://studio-renov.fr/services/cuisine-salle-de-bain" />
+        <link rel="canonical" href="https://www.studio-renov.fr/services/cuisine-salle-de-bain" />
+        <meta property="og:url" content="https://www.studio-renov.fr/services/cuisine-salle-de-bain" />
         <meta property="og:title" content="Cuisine &amp; Salle de Bain sur mesure — Fontainebleau &amp; Paris | Studio Renov" />
         <meta property="og:description" content="Conception et aménagement de cuisines et salles de bain sur mesure à Fontainebleau et Paris. Artisan qualifié, suivi personnalisé. Devis gratuit." />
       </Helmet>

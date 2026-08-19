@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://studio-renov.fr/sitemap.xml
+Sitemap: https://www.studio-renov.fr/sitemap.xml

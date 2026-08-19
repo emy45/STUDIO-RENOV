@@ -13,8 +13,8 @@ export function Home() {
       <Helmet>
         <title>Rénovation Intérieure &amp; Couverture — Fontainebleau &amp; Paris | Studio Renov</title>
         <meta name="description" content="Artisan rénovation intérieure clé en main à Fontainebleau et Paris. Peinture, sols, électricité, plomberie, menuiseries, couverture. Devis gratuit." />
-        <link rel="canonical" href="https://studio-renov.fr" />
-        <meta property="og:url" content="https://studio-renov.fr" />
+        <link rel="canonical" href="https://www.studio-renov.fr" />
+        <meta property="og:url" content="https://www.studio-renov.fr" />
         <meta property="og:title" content="Rénovation Intérieure &amp; Couverture — Fontainebleau &amp; Paris | Studio Renov" />
         <meta property="og:description" content="Artisan rénovation intérieure clé en main à Fontainebleau et Paris. Peinture, sols, électricité, plomberie, menuiseries, couverture. Devis gratuit." />
       </Helmet>

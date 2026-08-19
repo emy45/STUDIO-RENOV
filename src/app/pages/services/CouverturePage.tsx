@@ -48,8 +48,8 @@ export function CouverturePage() {
       <Helmet>
         <title>Couverture &amp; Toiture à Fontainebleau et Paris | Studio Renov</title>
         <meta name="description" content="Réfection de toiture, tuiles, ardoises, zinguerie et isolation à Fontainebleau et Paris. Couvreur artisan qualifié. Devis gratuit." />
-        <link rel="canonical" href="https://studio-renov.fr/services/couverture" />
-        <meta property="og:url" content="https://studio-renov.fr/services/couverture" />
+        <link rel="canonical" href="https://www.studio-renov.fr/services/couverture" />
+        <meta property="og:url" content="https://www.studio-renov.fr/services/couverture" />
         <meta property="og:title" content="Couverture &amp; Toiture à Fontainebleau et Paris | Studio Renov" />
         <meta property="og:description" content="Réfection de toiture, tuiles, ardoises, zinguerie et isolation à Fontainebleau et Paris. Couvreur artisan qualifié. Devis gratuit." />
       </Helmet>

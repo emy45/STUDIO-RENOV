@@ -47,8 +47,8 @@ export function PeintureFinitions() {
       <Helmet>
         <title>Peinture &amp; Finitions à Fontainebleau et Paris | Studio Renov</title>
         <meta name="description" content="Peinture intérieure et extérieure, enduit, papier peint à Fontainebleau et Paris. Finitions impeccables par un artisan qualifié. Devis gratuit." />
-        <link rel="canonical" href="https://studio-renov.fr/services/peinture-finitions" />
-        <meta property="og:url" content="https://studio-renov.fr/services/peinture-finitions" />
+        <link rel="canonical" href="https://www.studio-renov.fr/services/peinture-finitions" />
+        <meta property="og:url" content="https://www.studio-renov.fr/services/peinture-finitions" />
         <meta property="og:title" content="Peinture &amp; Finitions à Fontainebleau et Paris | Studio Renov" />
         <meta property="og:description" content="Peinture intérieure et extérieure, enduit, papier peint à Fontainebleau et Paris. Finitions impeccables par un artisan qualifié. Devis gratuit." />
       </Helmet>
