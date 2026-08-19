@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
@@ -41,7 +42,16 @@ export function SolsPlatrerieCloisonsPage() {
   ];
 
   return (
-    <div className="bg-[#0D0D0D]">
+    <>
+      <Helmet>
+        <title>Sols, Plâtrerie &amp; Cloisons à Fontainebleau et Paris | Studio Renov</title>
+        <meta name="description" content="Parquet, carrelage, faïence, cloisons BA13 et plâtrerie à Fontainebleau et Paris. Artisan qualifié, finitions soignées. Devis gratuit." />
+        <link rel="canonical" href="https://studio-renov.fr/services/sols-platrerie-cloisons" />
+        <meta property="og:url" content="https://studio-renov.fr/services/sols-platrerie-cloisons" />
+        <meta property="og:title" content="Sols, Plâtrerie &amp; Cloisons à Fontainebleau et Paris | Studio Renov" />
+        <meta property="og:description" content="Parquet, carrelage, faïence, cloisons BA13 et plâtrerie à Fontainebleau et Paris. Artisan qualifié, finitions soignées. Devis gratuit." />
+      </Helmet>
+      <div className="bg-[#0D0D0D]">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -215,5 +225,6 @@ export function SolsPlatrerieCloisonsPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
@@ -42,7 +43,16 @@ export function ElectricitePlomberiePage() {
   ];
 
   return (
-    <div className="bg-[#0D0D0D]">
+    <>
+      <Helmet>
+        <title>Électricité &amp; Plomberie à Fontainebleau et Paris | Studio Renov</title>
+        <meta name="description" content="Installation électrique aux normes, plomberie et sanitaire à Fontainebleau et Paris. Mise aux normes, tableau électrique, salle de bain. Devis gratuit." />
+        <link rel="canonical" href="https://studio-renov.fr/services/electricite-plomberie" />
+        <meta property="og:url" content="https://studio-renov.fr/services/electricite-plomberie" />
+        <meta property="og:title" content="Électricité &amp; Plomberie à Fontainebleau et Paris | Studio Renov" />
+        <meta property="og:description" content="Installation électrique aux normes, plomberie et sanitaire à Fontainebleau et Paris. Mise aux normes, tableau électrique, salle de bain. Devis gratuit." />
+      </Helmet>
+      <div className="bg-[#0D0D0D]">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -216,5 +226,6 @@ export function ElectricitePlomberiePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

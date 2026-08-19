@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Hero } from '../components/Hero';
 import { TrustBanner } from '../components/TrustBanner';
 import { Services } from '../components/Services';
@@ -9,6 +10,14 @@ import { Contact } from '../components/Contact';
 export function Home() {
   return (
     <>
+      <Helmet>
+        <title>Rénovation Intérieure &amp; Couverture — Fontainebleau &amp; Paris | Studio Renov</title>
+        <meta name="description" content="Artisan rénovation intérieure clé en main à Fontainebleau et Paris. Peinture, sols, électricité, plomberie, menuiseries, couverture. Devis gratuit." />
+        <link rel="canonical" href="https://studio-renov.fr" />
+        <meta property="og:url" content="https://studio-renov.fr" />
+        <meta property="og:title" content="Rénovation Intérieure &amp; Couverture — Fontainebleau &amp; Paris | Studio Renov" />
+        <meta property="og:description" content="Artisan rénovation intérieure clé en main à Fontainebleau et Paris. Peinture, sols, électricité, plomberie, menuiseries, couverture. Devis gratuit." />
+      </Helmet>
       <Hero />
       <div className="hidden sm:block">
         <TrustBanner />

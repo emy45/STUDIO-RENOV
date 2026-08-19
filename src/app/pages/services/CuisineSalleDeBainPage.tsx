@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
@@ -56,7 +57,16 @@ export function CuisineSalleDeBainPage() {
   ];
 
   return (
-    <div className="bg-[#0D0D0D]">
+    <>
+      <Helmet>
+        <title>Cuisine &amp; Salle de Bain sur mesure — Fontainebleau &amp; Paris | Studio Renov</title>
+        <meta name="description" content="Conception et aménagement de cuisines et salles de bain sur mesure à Fontainebleau et Paris. Artisan qualifié, suivi personnalisé. Devis gratuit." />
+        <link rel="canonical" href="https://studio-renov.fr/services/cuisine-salle-de-bain" />
+        <meta property="og:url" content="https://studio-renov.fr/services/cuisine-salle-de-bain" />
+        <meta property="og:title" content="Cuisine &amp; Salle de Bain sur mesure — Fontainebleau &amp; Paris | Studio Renov" />
+        <meta property="og:description" content="Conception et aménagement de cuisines et salles de bain sur mesure à Fontainebleau et Paris. Artisan qualifié, suivi personnalisé. Devis gratuit." />
+      </Helmet>
+      <div className="bg-[#0D0D0D]">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -321,5 +331,6 @@ export function CuisineSalleDeBainPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

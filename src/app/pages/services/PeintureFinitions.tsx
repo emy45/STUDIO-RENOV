@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
@@ -42,7 +43,16 @@ export function PeintureFinitions() {
   ];
 
   return (
-    <div className="bg-[#0D0D0D]">
+    <>
+      <Helmet>
+        <title>Peinture &amp; Finitions à Fontainebleau et Paris | Studio Renov</title>
+        <meta name="description" content="Peinture intérieure et extérieure, enduit, papier peint à Fontainebleau et Paris. Finitions impeccables par un artisan qualifié. Devis gratuit." />
+        <link rel="canonical" href="https://studio-renov.fr/services/peinture-finitions" />
+        <meta property="og:url" content="https://studio-renov.fr/services/peinture-finitions" />
+        <meta property="og:title" content="Peinture &amp; Finitions à Fontainebleau et Paris | Studio Renov" />
+        <meta property="og:description" content="Peinture intérieure et extérieure, enduit, papier peint à Fontainebleau et Paris. Finitions impeccables par un artisan qualifié. Devis gratuit." />
+      </Helmet>
+      <div className="bg-[#0D0D0D]">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -216,5 +226,6 @@ export function PeintureFinitions() {
         </div>
       </section>
     </div>
+    </>
   );
 }

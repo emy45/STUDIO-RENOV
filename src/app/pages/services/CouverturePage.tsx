@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
@@ -43,7 +44,16 @@ export function CouverturePage() {
   ];
 
   return (
-    <div className="bg-[#0D0D0D]">
+    <>
+      <Helmet>
+        <title>Couverture &amp; Toiture à Fontainebleau et Paris | Studio Renov</title>
+        <meta name="description" content="Réfection de toiture, tuiles, ardoises, zinguerie et isolation à Fontainebleau et Paris. Couvreur artisan qualifié. Devis gratuit." />
+        <link rel="canonical" href="https://studio-renov.fr/services/couverture" />
+        <meta property="og:url" content="https://studio-renov.fr/services/couverture" />
+        <meta property="og:title" content="Couverture &amp; Toiture à Fontainebleau et Paris | Studio Renov" />
+        <meta property="og:description" content="Réfection de toiture, tuiles, ardoises, zinguerie et isolation à Fontainebleau et Paris. Couvreur artisan qualifié. Devis gratuit." />
+      </Helmet>
+      <div className="bg-[#0D0D0D]">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -218,5 +228,6 @@ export function CouverturePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

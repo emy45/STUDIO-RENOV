@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
 import { CheckCircle, ArrowLeft, Phone } from 'lucide-react';
@@ -42,7 +43,16 @@ export function MenuiseriesCombles() {
   ];
 
   return (
-    <div className="bg-[#0D0D0D]">
+    <>
+      <Helmet>
+        <title>Menuiseries &amp; Combles à Fontainebleau et Paris | Studio Renov</title>
+        <meta name="description" content="Portes, fenêtres, placards et aménagement de combles à Fontainebleau et Paris. Isolation, menuiseries sur mesure. Artisan qualifié. Devis gratuit." />
+        <link rel="canonical" href="https://studio-renov.fr/services/menuiseries-combles" />
+        <meta property="og:url" content="https://studio-renov.fr/services/menuiseries-combles" />
+        <meta property="og:title" content="Menuiseries &amp; Combles à Fontainebleau et Paris | Studio Renov" />
+        <meta property="og:description" content="Portes, fenêtres, placards et aménagement de combles à Fontainebleau et Paris. Isolation, menuiseries sur mesure. Artisan qualifié. Devis gratuit." />
+      </Helmet>
+      <div className="bg-[#0D0D0D]">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -216,5 +226,6 @@ export function MenuiseriesCombles() {
         </div>
       </section>
     </div>
+    </>
   );
 }
